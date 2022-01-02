@@ -1,0 +1,120 @@
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*.contact Styling*/
+.contact{
+    margin: 10em;
+}
+.contact .contact-container{
+    background-color: white;
+    padding:10em;
+    border-radius: 20px;
+
+}
+.collection{
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+/*Left Side*/
+
+.contact .grid-2{
+    align-items:top;
+}
+
+.contact .contact-container .left-column{
+    height: 100%;
+}
+
+.contact .contact-container .left-column .logo{
+    height: 8rem;
+    margin: 2.5% 0;
+}
+.contact .contact-container .left-column ul{
+    padding: 0;
+    margin: 2.5% 0;
+    font-size: 1.2rem;
+}
+
+.contact .contact-container .left-column li{
+    margin: 1.5rem 0;
+}
+
+.contact .contact-container .left-column li a{
+    color: var(--dimTextColor);
+    font-weight: 400;
+}
+
+/*Right Side*/
+.form-wrapper{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.input-field{
+    margin: 10px 0;
+    width: 80%;
+    padding: 0.5rem 9.2%;
+    background-color: var(--textColor1);
+    border: 1px solid var(--textColor2);
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+#contact-form label{
+    line-height: 2.7rem;
+    color: var(--secondaryColor);
+    font-family: var(--textFont);
+    font-size: 1.2rem;
+}
+
+#submit-btn{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 1em;
+    color: var(--textColor1);
+    background-color: var(--textColor2);
+    border: none;
+    font-family: var(--textFont);
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+#submit-btn{
+    padding: 0.5em 1em;
+}
+
+.portfolio-title{
+    font-size: 3rem;
+    font-family: var(--titleFont2);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--textColor2);
+}
+
+@media screen and (max-width: 800px) {
+    .contact{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .contact .contact-container{
+        padding: 3rem;
+    }
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+}
